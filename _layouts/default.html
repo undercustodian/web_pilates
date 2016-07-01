@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it">
+  <head>
+    <meta charset="utf-8">
+      <title>{{page.title}} | {{site.url}}</title>
+  </head>
+  <body>
+    <header>
+      <h1>{{site.name}}</h1>
+        {% if site.menu %}
+        <nav>
+          <ul>
+            {% for iten in site.menu %}
+              <li><a href="{{ base }}/{{iten[1]}}">{{iten[0]}}</a></li>
+            {% endfor %}
+          </ul>
+        </nav>
+      {% endif %}
+    </header>
+    <section id="{{ page.section }}">
+      {{ content }}
+    </section>
+  </body>
+</html>

@@ -11,3 +11,9 @@ language_default:   'it'
 
 default_locale: "it" 
 
+# site Name
+name: "Web Pilates"
+
+#site Menu
+menu: [["home", "/" ]]
+
