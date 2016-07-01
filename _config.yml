@@ -1,0 +1,13 @@
+highlighter: pygment
+markdown: kramdown
+future: false
+
+# Enable sass
+sass:
+    style: compressed
+ 
+languages:          ['it']
+language_default:   'it'
+
+default_locale: "it" 
+
