@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it">
+  {% include base.html %}
   <head>
     <meta charset="utf-8">
       <title>{{page.title}} | {{site.url}}</title>
@@ -12,8 +13,9 @@
         <nav>
           <ul>
             {% for iten in site.menu %}
-              <li><a href="{{ base }}/{{iten[1]}}">{{iten[0]}}</a></li>
-            {% endfor %}
+	      <!-- {{ base }} relative path of the page than the root -->
+              <li><a href="{{ base }}{{iten[1]}}">{{iten[0]}}</a></li>
+	                  {% endfor %}
           </ul>
         </nav>
       {% endif %}

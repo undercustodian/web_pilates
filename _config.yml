@@ -14,6 +14,6 @@ default_locale: "it"
 # site Name
 name: "Web Pilates"
 
-#site Menu
+# site Menu [ [ neme_link, absolute_path ], ... ]
 menu: [["home", "/" ]]
 
