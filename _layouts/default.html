@@ -14,7 +14,7 @@
           <ul>
             {% for iten in site.menu %}
 	      <!-- {{ base }} relative path of the page than the root -->
-              <li><a href="{{ base }}{{iten[1]}}">{{iten[0]}}</a></li>
+              <li><a href="{{ base }}{{iten[1]}}{{site.index}}">{{iten[0]}}</a></li>
 	                  {% endfor %}
           </ul>
         </nav>
