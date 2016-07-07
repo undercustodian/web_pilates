@@ -1,0 +1,16 @@
+<article class="event_preview">
+  <header>
+    <hgroup>
+     <h1>{{event.title}}</h1>
+     <h2><time datetime="{{event.event_date}}">{{event.event_date}}</time></h2>
+   </hgroup>
+  <header>
+  <p class="text_preview">
+    {{ event.content | markdownify | strip_html | truncatewords: 45 }}
+  </p>
+  <footer>
+    <span class="author">{{event.author}}</span>
+    <span class="date"><time datetime="{{event.date}}">{{ event.date }}</time></span>
+    <a href="{{ base }}{{ event.url }}" class="read">leggi...</a>
+  </footer>
+</article>

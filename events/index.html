@@ -1,0 +1,15 @@
+---
+title: Eventi
+layout: home
+---
+
+{% assign sorted = site.events | sort: "event_date" | reverse %}
+{% for event in  sorted %}
+  <ul>
+    <li>
+      {% include event_preview.html %}
+    </li>
+  </ul>
+{% endfor %}
+
+

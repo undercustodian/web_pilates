@@ -15,8 +15,13 @@ default_locale: "it"
 name: "Web Pilates"
 
 # site Menu [ [ neme_link, absolute_path ], ... ]
-menu: [["home", "/" ]]
+menu: [["home", "/" ], ["eventi", "/events/"]]
 
 # even without a web server
 index: "index.html"
+
+# events
+collections:
+  events:
+    output: true
 

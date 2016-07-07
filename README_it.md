@@ -9,4 +9,15 @@ Per farlo funzionare senza server web si deve accettare che i percorsi finiscano
 
     # index: "index.html"
 
+### Per disabilitare gli eventi
 
+Commentare tutte le rige
+
+    # events
+    collections:
+      events:
+        output: true
+
+eliminare l'elemento ["eventi", "/events/"] dalla riga sotto
+    
+    # site Menu [ [ neme_link, absolute_path ], ... ]
