@@ -2,7 +2,6 @@
 
 {% assign base = '' %}
 {% assign depth = page.url | append: " " | split: '/' | size %}
-{{ page.url | split: '/' |  join: " and " }}
 {% if  depth == 2 %}{% assign base = '.' %}
 {% elsif  depth == 3 %}{% assign base = '..' %}
 {% elsif  depth == 4 %}{% assign base = '../..' %}
