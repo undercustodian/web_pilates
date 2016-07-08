@@ -1,10 +1,12 @@
 <!-- base is the relative position of the root compared to the current page -->
 
 {% assign base = '' %}
-{% assign depth = page.url | split: '/' | size %}
-{% if  depth == 0 %}{% assign base = '.' %}
-{% elsif  depth == 2 %}{% assign base = '..' %}
-{% elsif  depth == 3 %}{% assign base = '../..' %}
-{% elsif  depth == 4 %}{% assign base = '../../..' %}
+{% assign depth = page.url | append: " " | split: '/' | size %}
+{{ page.url | split: '/' |  join: " and " }}
+{% if  depth == 2 %}{% assign base = '.' %}
+{% elsif  depth == 3 %}{% assign base = '..' %}
+{% elsif  depth == 4 %}{% assign base = '../..' %}
+{% elsif  depth == 5 %}{% assign base = '../../..' %}
 {% elsif  depth == 6 %}{% assign base = '../../../..' %}
 {% endif %}
+
