@@ -1,0 +1,14 @@
+---
+title: Blog
+layout: blog
+---
+
+<ul>
+{% for post in  site.posts %}
+  <li>
+    {% include post_preview.html %}
+  </li>
+{% endfor %}
+</ul>
+
+
