@@ -21,3 +21,13 @@ Commentare tutte le rige
 eliminare l'elemento ["eventi", "/events/"] dalla riga sotto
     
     # site Menu [ [ neme_link, absolute_path ], ... ]
+
+### Togliere il blog
+
+eliminare l'elemento ["blog", "/blog/"] dalla riga sotto
+
+    # site Menu [ [ neme_link, absolute_path ], ... ]
+
+Ed eliminare le directory `/blog` e `/_post`
+
+

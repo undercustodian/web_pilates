@@ -21,3 +21,11 @@ Comment out all rige
 delete the item ["events", "/ events /"] from the row below
     
     # site Menu [ [ neme_link, absolute_path ], ... ]
+
+### Remove the blog
+
+delete the item ["blog", "/blog/"] from the row below
+
+     # Site Menu [[neme_link, absolute_path], ...]
+
+And delete the directory `/blog` and /_post`
