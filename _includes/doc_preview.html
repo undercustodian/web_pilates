@@ -7,6 +7,9 @@
   {% when 'posts' %}
     {% assign post = doc %}
     {% include post_preview.html %}
+  {% when 'home' %}
+    {% assign home = doc %}
+    {% include post_home.html %}
   {% else %}
     Print the domunent of the collection {{doc.collection}} is unable
 {% endcase %}

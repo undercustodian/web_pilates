@@ -1,7 +1,15 @@
 ---
-title: Vetrina
+title: howcase
 layout: home
 ---
 
-<h1>Hello!</h1>
+{% assign sorted = site.home | sort: "url" %}
+{% for home in  sorted %}
+  <ul> 
+    <li>
+      {% include post_home.html %}
+    </li>
+  </ul>
+{% endfor %}
+
 

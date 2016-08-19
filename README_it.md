@@ -41,4 +41,9 @@ eliminare l'elemento ["log", "/log/"] dalla riga sotto
 
 Ed eliminare le directory `/log`
 
+### Messaggi sulla Home
+
+I messagi in home si trovano in `_home`. I messaggi sono ordinati 
+secondo
+il nome dei file.
 

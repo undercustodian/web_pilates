@@ -1,0 +1,16 @@
+---
+title: Upcoming events!
+layout: post_home
+---
+
+
+<h1>Recent events</h1>
+<ul>
+{% assign sorted = site.events | sort: "event_date" | reverse %}
+{% for event in sorted limit:2 %}
+  <li>
+    {% include event_preview.html %}
+  </li>
+{% endfor %}
+</ul>
+
