@@ -3,30 +3,10 @@ title: Log
 layout: log
 ---
 
-{% include base.html %}
-{% assign n_log = site.events.size | plus: site.posts.size %}
-{% assign i_post = 0 %}
-{% assign i_event = 0 %}
 <ul>
-{% for index in  (1..n_log) %}
-  <li>
-    {% if site.posts[i_post].date < site.events[i_event].date %}
-      {% assign news_log = site.posts[i_post] %}
-      {% assign i_post = i_post | plus: 1 %}
-    {% else %}
-      {% assign news_log = site.events[i_event] %}
-      {% assign i_event =  i_event | plus: 1 %}
-    {% endif %}
-
-    {% if news_log.event_date %}
-      {% assign event = news_log %}
-      {% include event_preview.html %}
-    {% else %}
-      {% assign post = news_log %}
-      {% include post_preview.html %}
-    {% endif %}
-
-  </li>
+{% assign docs = site.documents | sort: "date" %}
+{% for doc in docs %}
+  <li>{% include doc_preview.html %}</li>
 {% endfor %}
 </ul>
 

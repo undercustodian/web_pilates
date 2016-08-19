@@ -1,0 +1,16 @@
+<span class="collection">Type collection {{doc.collection}}</span>
+<span class="time"> time <time datetime="{{doc.date}}">{{doc.date}}</time></span>
+{% case doc.collection %}
+  {% when 'events' %}
+    {% assign event = doc %}
+    {% include event_preview.html %}
+  {% when 'posts' %}
+    {% assign post = doc %}
+    {% include post_preview.html %}
+  {% when 'home' %}
+    {% assign home = doc %}
+    {% include post_home.html %}
+  {% else %}
+    Print the domunent of the collection {{doc.collection}} is unable
+{% endcase %}
+

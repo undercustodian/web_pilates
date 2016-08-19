@@ -24,4 +24,6 @@ index: "index.html"
 collections:
   events:
     output: true
+  home:
+    output: true
 

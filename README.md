@@ -41,3 +41,7 @@ delete the item ["log", "/log/"] from the row below
 
 And delete the `/log` directory
 
+### Messages on the home
+The messages on the home can be found in `_home`. The messages are 
+sorted according to the file names
+
