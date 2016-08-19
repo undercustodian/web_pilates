@@ -2,11 +2,11 @@
   {% include base.html %}
   <header>
     <hgroup>
-     <h1>{{post.title}}</h1>
-     <h2><time datetime="{{post.date}}">{{post.date}}</time></h2>
-     <h2><span class="author">{{post.author}}</span></h2>
-   </hgroup>
-  <header>
+      <h1>{{post.title}}</h1>
+      <h2><time datetime="{{post.date}}">{{post.date}}</time></h2>
+      <h2><span class="author">{{post.author}}</span></h2>
+    </hgroup>
+  </header>
   <p class="text_preview">
     {{ post.content | markdownify | strip_html | truncatewords: 45 }}
   </p>
